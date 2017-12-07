@@ -49,7 +49,7 @@
                         <label for="emailmegerosit">E-mail cím megerősítése:</label>
                         <input type="email" class="form-control" id="emailmegerosit" placeholder="gipsz@jakab.hu">
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-6">
                         <label for="ev">Születési év:</label>
                         <select id="ev" name="ev" class="form-control">
                             <option selected value="">----</option>
@@ -66,7 +66,7 @@
                             <option value="1990">2000</option>
                         </select>
                     </div>
-                    <div class="form-group col-md-2">
+                    <div class="form-group col-md-3">
                         <label for="honap">Születési hónap:</label>
                         <select id="honap" name="honap" class="form-control">
                             <option selected value="">---</option>
@@ -84,7 +84,7 @@
                             <option value="dec">December</option>
                         </select>
                     </div>
-                    <div class="form-group col-md-2">
+                    <div class="form-group col-md-3">
                         <label for="nap">Születési nap:</label>
                         <select id="nap" name="nap" class="form-control">
                             <option selected value="">---</option>
@@ -121,22 +121,31 @@
                             <option value="31">31</option>
                         </select>
                     </div>
-                    <div class="form-check form-check-inline">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="nem" id="ferfi" value="ferfi"> Férfi
-                        </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="nem" id="no" value="no"> Nő
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" name="feltetel" id="feltetel" class="form-check-input">
-                            Elfogadom a szokásos feltételeket.
-                        </label>
-                    </div>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-legend col-sm-12">Nem</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="nem" id="fefri" value="ferfi">
+                                        Férfi
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="nem" id="no" value="no">
+                                        Nő
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" name="feltetel" id="feltetel" class="form-check-input">
+                        Elfogadom a szokásos feltételeket.
+                    </label>
                 </div>
                 <button type="submit" class="btn btn-primary" id="elkuld">Elküld</button>
             </form>
